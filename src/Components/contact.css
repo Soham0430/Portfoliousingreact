@@ -1,0 +1,53 @@
+
+.contact-input{
+    width: 50%;
+    margin: 30px;
+    
+    animation: contact-animation 0.5s ease-in-out;
+}
+.contact-input input  {
+   font-size: small;
+   
+   
+}
+.contact-input label  {
+    font-size: small;
+ }
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    width: 50%;
+    margin: 30px;
+    animation: contact-animation 1s ease;
+}
+svg{
+    height: 30px;
+    width: 30px;
+    margin-right: 30px;
+}
+.contact-icons{
+    display: flex;
+    
+
+}
+.contact-icons p{
+    font-size:medium;
+    font-weight: 400;
+}
+@media (max-width: 856px){
+    .contact-info, .contact-input{
+        width: 100%;
+        padding: 20px;
+
+    }
+}
+@keyframes contact-animation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;}
+  }
+ 
+  

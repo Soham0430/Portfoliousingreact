@@ -1,0 +1,137 @@
+.home-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 91vh;
+}
+.home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    height: 60vh;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    animation: sliding-container 1s ease-in-out;
+
+}
+home-info{
+    width: 50%;
+    animation: sliding-container 2s ease-in-out;
+}
+.home-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+padding: 15vh 0vw;
+animation: sliding-container 1s ease-in-out;
+}
+.home-img img{
+width: 65%;
+    height:80% ;
+    border-radius: 50%;
+}
+.home-info{
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 20px ;
+    border-bottom: 5px solid aquamarine;
+    animation: sliding-container 1s ease-in-out;
+
+ 
+}
+.Hello{
+    font-size: 4vw;
+     
+}
+.name{
+    font-size: 4vw;
+    font-weight: bold;
+}
+.about{
+    font-size: 2vw;
+}
+.buttons{
+    margin-top: 34px;
+  
+
+}
+.buttons a{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: aqua;
+    font-weight: bold;
+    text-decoration: none;
+   font-size:1.3vw;
+    margin: 0 3px;
+    cursor: pointer;
+    
+}
+
+.buttons :hover{
+    background-color: white;
+    color: blue;
+}
+@media (max-width: 998px){
+    .home-container{
+        flex-direction: column;
+        justify-content:flex-start;
+        height:fit-content;
+        width: 80vw;
+        margin: 30px;
+    }
+    .home-img{
+        padding: 2vh 0vw;
+        width: 55vw;
+        height:30vh ;
+       
+        }
+    .home-info{
+        margin: 20px;
+        width: 80%;
+    }
+    .home-main{
+        align-items: flex-start;
+     
+    }
+    .Hello{
+        font-size: x-large;
+         
+    }
+    .name{
+        
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    .about{
+        font-size:large;
+    }
+    .buttons{
+        margin-top: 34px;
+      
+    
+    }
+   
+  
+   
+
+
+}
+@keyframes sliding-container{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;}
+}
+.active{
+    text-decoration: underline;
+    
+  }

@@ -1,0 +1,17 @@
+.project{
+    width: 90%;
+    margin: 20px;
+    height: 80%;
+    animation: project-ani 1s ease;
+}
+.project h1{
+    margin: 10px;
+}
+@keyframes project-ani{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
